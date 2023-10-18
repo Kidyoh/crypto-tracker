@@ -48,7 +48,7 @@ function App() {
   );
 
   useEffect(() => {
-    Axios.get("/data/exchange_rates.json")
+    Axios.get("data/exchange_rates.json")
       .then((res) => {
         setExchangeRates(res.data.rates);
       })

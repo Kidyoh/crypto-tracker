@@ -1,16 +1,6 @@
 import React from "react";
-import Image from 'next/image'
 
-interface ShegaProps {
-  name: string;
-  price: number;
-  convertedPrice: number;
-  symbol: string;
-  marketcap: number;
-  volume: number;
-  image: string;
-  priceChange: number;
-}
+
 
 const Shega = ({
   name,
@@ -29,7 +19,7 @@ const Shega = ({
     <div className="shega-container">
       <div className="shega-row border-b border-gray-300 h-20 w-[1060px] items-center">
         <div className="flex items-center pr-6 pt-6 min-w-[280px]">
-          <Image src={image} alt="crypto" className="h-8 w-8 mr-2" />
+          <img src={image} alt="crypto" className="h-8 w-8 mr-2" />
           <h2 className="text-sm w-32">{name}</h2>
           <p className="uppercase pl-6">{symbol}</p>
        
